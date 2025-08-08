@@ -1,0 +1,79 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Styles - Always desktop layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  padding: 10px 20px;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Hide hamburger menu completely (desktop only) */
+.hamburger {
+  display: none;
+}
+
+/* Hero Section */
+.hero {
+  padding: 50px;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.hero h1 {
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Content Section - Fixed side-by-side boxes */
+.content {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.box {
+  flex: 1;
+  background: #ddd;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Images - keep them fixed size for desktop feel */
+.box img {
+  width: 300px;
+  height: auto;
+  display: inline-block;
+}

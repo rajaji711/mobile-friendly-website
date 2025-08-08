@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Website</title>
+  <link rel="stylesheet" href="before.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">MySite</div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <header class="hero">
+    <h1>Welcome to My Website</h1>
+    <p>This site is fully responsive using CSS media queries and a hamburger menu.</p>
+  </header>
+
+  <section class="content">
+    <div class="box">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaEPiyeQ4Du68B9R7v8lAQdCE4udUtVUfgGw&s" alt="Example Image 1">
+      <p>Box 1: Some content here.</p>
+    </div>
+    <div class="box">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfBq2my_hufg1O7xaEx7r1dn2DgZOgIP-gkg&s" alt="Example Image 2">
+      <p>Box 2: Some content here.</p>
+    </div>
+    <div class="box">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGzqDSNhnVcRSmD26q5KB4fbeaTKqr30ldIw&s" alt="Example Image 3">
+      <p>Box 3: Some content here.</p>
+    </div>
+  </section>
+
+  <script>
+    // Toggle hamburger menu
+    document.getElementById("hamburger").addEventListener("click", function () {
+      document.getElementById("navLinks").classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
